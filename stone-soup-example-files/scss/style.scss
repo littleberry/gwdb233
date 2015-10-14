@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,900,900italic);
+
+$main-color: hsl(10, 80%, 60%);
+$background-color: rgb(220, 220, 220);
+$accent-color: rgb(200, 200, 255);
+
+@mixin border-radius($radius: 1em) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin box-shadow($h-offset: .25em, $v-offset: .25em, $blur: .25em, $spread: .25em, $shadow-color: $background-color) {
+	-webkit-box-shadow: $h-offset $v-offset $blur $spread $shadow-color;
+	-moz-box-shadow: $h-offset $v-offset $blur $spread $shadow-color;
+	box-shadow: $h-offset $v-offset $blur $spread $shadow-color;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Merriweather, Georgia, Times, "Times New Roman", serif;
+	font-size: 100%;
+	background-color: $background-color;
+}
+
+a {
+	font-weight: bold;
+	font-size: 1.125em;
+	
+	&:link {
+		color: darken($main-color, 20);
+		text-decoration: none;
+	}
+	&:hover, &:active {
+		text-decoration: underline;
+	}
+}
+
+article {
+	width: 60%;
+	margin: 5em auto;
+	//padding: 1em 2em;
+	border: .0625em solid rgb(200, 200, 255);
+	background-color: rgb(255, 255, 255);
+	
+	header {
+		margin: 0;
+		background-color: $main-color;
+	}
+	
+	h1 {
+		margin: 0;
+	}
+	
+	h3 {
+		font-size: 1.5em;
+		color: darken($accent-color, 20);
+	}
+	
+	section {
+		clear: both;
+	}
+	
+	footer {
+		background-color: darken($background-color, 20);
+		padding: 1em;
+		font: {
+			family: Arial;
+			weight: bold;
+			size: .75em;
+		}
+	}
+}
+.recipe-info {
+	padding: 1em;
+
+	img {
+		width: 40%;
+		@include border-radius(50%);
+		@include box-shadow(3px, 3px, 6px, 2px, darken($background-color, 40));
+		float: left;
+	}
+	
+	blockquote {
+		//float: right;
+		border: .0625em solid $accent-color;
+		padding: 1em;
+		@include border-radius();
+	}
+}

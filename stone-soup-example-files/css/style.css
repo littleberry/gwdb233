@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,900,900italic);
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Merriweather, Georgia, Times, "Times New Roman", serif;
+  font-size: 100%;
+  background-color: gainsboro;
+}
+
+a {
+  font-weight: bold;
+  font-size: 1.125em;
+}
+a:link {
+  color: #b83014;
+  text-decoration: none;
+}
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+article {
+  width: 60%;
+  margin: 5em auto;
+  border: 0.0625em solid #c8c8ff;
+  background-color: white;
+}
+article header {
+  margin: 0;
+  background-color: #eb6347;
+}
+article h1 {
+  margin: 0;
+}
+article h3 {
+  font-size: 1.5em;
+  color: #6262ff;
+}
+article section {
+  clear: both;
+}
+article footer {
+  background-color: darkgray;
+  padding: 1em;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: .75em;
+}
+
+.recipe-info {
+  padding: 1em;
+}
+.recipe-info img {
+  width: 40%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 3px 3px 6px 2px #767676;
+  -moz-box-shadow: 3px 3px 6px 2px #767676;
+  box-shadow: 3px 3px 6px 2px #767676;
+  float: left;
+}
+.recipe-info blockquote {
+  border: 0.0625em solid #c8c8ff;
+  padding: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  border-radius: 1em;
+}
