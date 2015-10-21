@@ -1,0 +1,3 @@
+# Ignore CSS files generated from SCSS files
+*.css
+*.map
