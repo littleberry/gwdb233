@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic);
+
+$font-default: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+
+$bp-small: 40em;
+$bp-medium: 48em;
+$bp-large: 75em;
+
+body {
+	font-size: 100%;
+	font-family: $font-default;
+	
+	@media only screen and (min-width: $bp-large) {
+		font-size: 120%;
+	}
+}
+
+p {
+	padding: .25em .75em;
+	
+	@media only screen and (min-width: $bp-medium) {
+		padding: .5em 2em;
+	}
+}
+
+a {
+	padding: .125em;
+}
+
+.site-title {
+	font-size: 3em;
+}
+.site-tag {
+	font-size: 1.25em;
+	font-style: italic;
+	
+	@media only screen and (min-width: $bp-small) {
+		font-size: 2.5em;
+	}
+}
+
+.site-nav-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.site-nav-item {
+	margin: .125em 0;
+	padding: 0;
+}
+
+.section-title {
+	font-size: 2em;
+}
+
+.section-sub-title {
+	font-size: 1.25em;
+}
